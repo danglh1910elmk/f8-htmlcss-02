@@ -1,8 +1,8 @@
 /* ================ sen font=================  */
 @font-face {
     font-family: "Sen";
-    src: url("poppins-font/Sen-Regular.woff2") format("woff2"),
-        url("poppins-font/Sen-Regular.woff") format("woff");
+    src: url("./sen-font/Sen-Regular.woff2") format("woff2"),
+        url("./sen-font/Sen-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: "Sen";
-    src: url("poppins-font/Sen-Bold.woff2") format("woff2"),
-        url("poppins-font/Sen-Bold.woff") format("woff");
+    src: url("./sen-font/Sen-Bold.woff2") format("woff2"),
+        url("./sen-font/Sen-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: "Sen";
-    src: url("poppins-font/Sen-ExtraBold.woff2") format("woff2"),
-        url("poppins-font/Sen-ExtraBold.woff") format("woff");
+    src: url("./sen-font/Sen-ExtraBold.woff2") format("woff2"),
+        url("./sen-font/Sen-ExtraBold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
