@@ -20,6 +20,7 @@ body {
 /* ============= common selectors ============== */
 .content {
     width: 1170px;
+    max-width: calc(100% - 48px);
     margin: auto;
 }
 
@@ -45,7 +46,7 @@ a {
     top: -28px;
     z-index: 1;
     padding-top: 28px;
-    background-color: pink;
+    background-color: #ffe395;
 }
 
 .navbar {
@@ -55,34 +56,50 @@ a {
 }
 
 .header .content {
-    margin: auto;
+    /* margin: auto; */
 }
 
 .header .navbar ul {
     display: flex;
     align-items: center;
-    gap: 0 42px;
-    margin-left: 512px;
+    margin-left: auto;
+    margin-right: 49px;
 }
 
 .header ul .link {
+    position: relative;
     color: #5f5b53;
-    text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
+    padding: 8px 21px;
+}
+
+.header ul .link:hover {
+    color: #171100;
+    text-shadow: 0 0 1px currentColor;
+}
+
+.header ul .link:hover::after {
+    content: "";
+    position: absolute;
+    left: 21px;
+    bottom: 5px;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #171100;
 }
 
 .header .btn {
     border-radius: 24.5px;
     min-width: 144px;
-    margin-left: auto;
 }
 
 /* ============= Hero section ============== */
 .hero-wrapper {
-    padding: 64px 0 65px;
-    background-color: rgb(162, 218, 253);
+    padding: 56px 0 65px;
+    background-color: #fffcf4;
 }
 
 .hero-wrapper .content {
@@ -116,7 +133,7 @@ a {
     width: 270px;
     height: 244px;
     border-radius: 12px;
-    background-color: #ffcdcd;
+    background-color: #fff;
 }
 
 .hero-wrapper .floating-card .icon-column {
@@ -145,12 +162,96 @@ a {
     color: #5f5b53;
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 1.86; /* 185.714% */
+    line-height: 1.86;
 }
 
 .hero-wrapper .floating-card .text-column .link {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
-    line-height: 1.67; /* 166.667% */
+    line-height: 1.67;
+}
+
+/* ====== text block ====== */
+.hero-wrapper .text-block {
+    width: 470px;
+    height: 558px;
+    /* 128px: margin-top in figma
+    56px: hero-wrapper's padding-top
+    8px: navbar's padding-bottom */
+    margin-top: calc(128px - 56px - 8px);
+    margin-left: 230px;
+}
+
+.hero-wrapper .text-block .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+
+.hero-wrapper .text-block p.desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero-wrapper .cta-block {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero-wrapper .cta-block .btn {
+    width: 180px;
+    height: 64px;
+    border-radius: 32px;
+    background: #ffb900;
+    font-size: 1.8rem;
+    line-height: 64px;
+}
+
+.hero-wrapper .cta-block a:last-child {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero-wrapper .text-block span.desc {
+    display: block;
+    margin-top: 48px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero-wrapper .stats {
+    display: flex;
+    gap: 0 28px;
+    margin-top: 8px;
+}
+
+.hero-wrapper .stats > div {
+    display: flex;
+    align-items: baseline;
+    gap: 0 16px;
+}
+
+.hero-wrapper .stats .number {
+    color: #171100;
+    font-family: sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.hero-wrapper .stats .text {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
