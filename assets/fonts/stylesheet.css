@@ -1,5 +1,5 @@
 /* ================ sen font=================  */
-@font-face {
+/* @font-face {
     font-family: "Sen";
     src: url("./sen-font/Sen-Regular.woff2") format("woff2"),
         url("./sen-font/Sen-Regular.woff") format("woff");
@@ -24,7 +24,7 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 /* ================ poppins font=================  */
 @font-face {

@@ -510,6 +510,7 @@ a {
 
 .feedback .dots .dot.active {
     background: #ffb900;
+    cursor: default;
 }
 
 .feedback .feedback-content .icon {
@@ -523,4 +524,242 @@ a {
     font-size: 2.6rem;
     font-style: italic;
     line-height: 1.54;
+}
+
+/* ============= Outcomes section ============== */
+.outcomes-section {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.outcomes-section .content {
+    display: flex;
+    justify-content: space-between;
+    height: 438px;
+}
+
+.outcomes-section .text-block {
+    width: 42%;
+    display: flex;
+    align-items: center;
+}
+
+/* ==== img-block ==== */
+.outcomes-section .img-block {
+    width: 49%;
+    position: relative;
+}
+
+.outcomes-section .img-block .image {
+    position: absolute;
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.outcomes-section .img-block .image:first-child {
+    left: 0;
+    bottom: 0;
+}
+
+.outcomes-section .img-block .image:last-child {
+    right: 0;
+    top: 0;
+}
+
+/* ==== text-block ==== */
+.outcomes-section .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.02rem;
+    margin-bottom: 16px;
+}
+
+.outcomes-section .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.outcomes-section .btn {
+    margin-top: 32px;
+    width: 137px;
+    border-radius: 26px;
+    background: #ffb900;
+}
+
+/* ============= below outcomes section ============== */
+.below-outcomes {
+    padding: 65px 0;
+    margin-top: 70px;
+}
+
+.below-outcomes .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.below-outcomes .text-block {
+    width: 49.2%;
+    display: flex;
+    align-items: center;
+}
+
+.below-outcomes .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.02rem;
+}
+
+.below-outcomes .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.below-outcomes .btn {
+    margin-top: 32px;
+    width: 137px;
+    border-radius: 26px;
+    background: #ffb900;
+}
+
+.below-outcomes .image {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ============= Blog section ============== */
+.blog {
+    padding: 96px 0;
+    margin-top: 135px;
+    background: #fffcf4;
+}
+
+.blog-header .title {
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+
+.blog-header .desc {
+    margin-top: 16px;
+    color: #696262;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.blog .blog-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 0 30px;
+}
+
+.blog-item {
+    flex: 1;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.blog-item:hover {
+    box-shadow: 0px 16px 32px 0px #0000000d;
+}
+
+.blog .blog-item .image {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
+
+.blog .info {
+    padding: 20px 20px 28px;
+}
+
+.blog-item .date::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 6px;
+    width: 6px;
+    left: -10px;
+    top: 4px;
+    border-radius: 50%;
+    background: #ffb900;
+}
+
+.blog-item .date {
+    margin-left: 10px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.blog-item .date::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -15px;
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
+}
+
+.blog-item .title {
+    margin-top: 25px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.blog-item .btn {
+    margin-top: 12px;
+    width: 118px;
+    border-radius: 25px;
+    background: #171100;
+    font-size: 1.4rem;
+}
+
+.blog-item .btn:hover {
+    background: #ffb900;
+    transition: 0.2s;
+}
+
+/* 3 dots  */
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 0 6px;
+}
+
+.blog .dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #5f5b53;
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    background-color: #ffb900;
+    cursor: default;
 }
