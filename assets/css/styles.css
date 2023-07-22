@@ -647,9 +647,12 @@ a {
     background: #fffcf4;
 }
 
+.blog-header {
+    text-align: center;
+}
+
 .blog-header .title {
     color: #130606;
-    text-align: center;
     font-family: Sen;
     font-size: 3.8rem;
     font-weight: 700;
@@ -657,21 +660,24 @@ a {
 }
 
 .blog-header .desc {
+    margin: auto;
     margin-top: 16px;
+    width: 448px;
     color: #696262;
-    text-align: center;
     font-size: 1.6rem;
-    line-height: 1.75; /* 175% */
+    line-height: 1.75;
 }
 
 .blog .blog-list {
     margin-top: 55px;
     display: flex;
     gap: 0 30px;
+    overflow: hidden;
 }
 
 .blog-item {
-    flex: 1;
+    width: calc((100% - 60px) / 3);
+    flex-shrink: 0;
     border-radius: 16px;
     background: #fff;
 }
@@ -693,30 +699,31 @@ a {
 
 .blog-item .date::before {
     content: "";
-    position: absolute;
-    display: block;
+    display: inline-block;
+    margin-right: 4px;
     height: 6px;
     width: 6px;
-    left: -10px;
-    top: 4px;
     border-radius: 50%;
     background: #ffb900;
 }
 
 .blog-item .date {
     margin-left: 10px;
+    padding-bottom: 12px;
     color: #5f5b53;
     font-size: 1.4rem;
     position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 
 .blog-item .date::after {
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
-    left: -10px;
-    bottom: -15px;
-    width: 160px;
+    left: 0;
+    right: -27px;
+    bottom: 0;
     height: 1px;
     border-radius: 0.5px;
     background: #e2dfda;
